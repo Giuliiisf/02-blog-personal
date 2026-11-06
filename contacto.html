@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Blog personal de Giuli sobre makeup">
- <title>Contacto| Blog de Giuli</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Giuli para consultas sobre maquillaje o propuestas de colaboración.">
+    <title>Contacto | Blog de Giuli</title>
 </head>
 <body>
     <header>
         <h1>Blog de Giuli</h1>
-        <p>Un espacio donde la belleza, la creatividad y el maquillaje se unen para resaltar tu esencia y expresar tu estilo único. 💄✨</p>
+        <p>Un espacio donde la belleza, la creatividad y el maquillaje se unen para resaltar tu esencia y expresar tu estilo único.</p>
         <nav>
             <ul>
-                <li><a href="index.html" >Inicio</a></li>
-                <li><a href="articulo-1.html" >Artículo 1</a></li>
-                <li><a href="articulo-2.html" >Artículo 2</a></li>
-                <li><a href="sobre-mi.html" >Sobre mi</a></li>
-                <li><a href="contacto.html" >contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="articulo-1.html">Artículo 1</a></li>
+                <li><a href="articulo-2.html">Artículo 2</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Últimas publicaciones</h2>
-            <article>
-                <h3>Recomendación de maquillaje</h3>
-                <p><time datetime="2026-10-29">29 de octubre de 2026</time></p>
-                <p>Encuentra tus nuevos favoritos de este mes.</p>
-                <a href="articulo-1.html">Leer más</a>
-            </article>
-            <article>
-                <h3>Tendencias de maquillaje</h3>
-                <p><time datetime="2026-10-31">31 de octubre de 2026</time></p>
-                <p>Encuentra nuevas tendencias de maquillaje y luce genial.</p>
-                <a href="articulo-2.html">Leer más</a>
-            </article>
-        </section>
+        <h2>Contacto</h2>
+        <p>¿Tienes una pregunta sobre maquillaje o una propuesta de colaboración? Escríbeme.</p>
+        <form>
+            <p>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </p>
+            <p>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+            <p>
+                <label for="asunto">Asunto:</label><br>
+                <select id="asunto" name="asunto">
+                    <option>Consulta de maquillaje</option>
+                    <option>Colaboración con marcas</option>
+                    <option>Otro</option>
+                </select>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            </p>
+            <p><button type="submit">Enviar</button></p>
+        </form>
     </main>
     <footer>
-        <p>&copy; 2026 Blog de Giuli. Todos los derechos están reservados</p>
+        <p>&copy; 2026 Blog de Giuli. Todos los derechos reservados.</p>
+       
     </footer>
 </body>
 </html>
