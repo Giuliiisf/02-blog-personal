@@ -19,6 +19,11 @@
 
     /* Medidas*/
     --ancho--contenido: 960px;
+
+    /* Tarjetas*/
+    --radio: 12px;
+    --sombra: 0 2px 8px rgba(0,0,0,0.8);
+    --sombra-fuerte: 0 8px 20px rgba(0,0,0,0.12)
 }
 
 /* Correción del cálculo del tamaño de las cajas (box)*/
@@ -124,24 +129,11 @@ nav a:hover {
 nav a.activo {
     background-color:#fff;
     color: var(--color-primario);
-    text-decoration: none;
 }
 
-/* Contenido principal */
-main {
-    max-width: 900px;
-    margin: 45px auto;
-    padding: 20px;
-}
-
-section h2 {
-    text-align: center;
-    color: #c52e58;
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-section h2::after {
-    content: " ♡";
-    color: #ef7797;
+/* Tarjetas*/
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    gap: 1.5rem;
 }
